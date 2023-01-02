@@ -2,14 +2,21 @@
     background-color: rgb(243, 240, 237);
 }
 
-/* table, tr, td
-{
-    border: 2px solid sandybrown;
-    margin: 10px;
-    border-collapse: collapse;
-} */
-h2,
-p {
+/* homePage styling */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* buttom styling */
+a {
+    text-decoration: none;
+}
+
+h2 {
     color: sandybrown;
     padding: 10px;
     text-align: center;
@@ -20,18 +27,16 @@ p {
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-}
-
 h2:hover {
     background-color: rgb(26, 19, 19);
 }
 
-p:hover {
-    background-color: black;
+.centered-button {
+    display: flex;
+    justify-content: center;
 }
 
+/* Container styling */
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -49,18 +54,6 @@ p:hover {
     width: 300px;
     height: 300px;
 }
-#container>div:hover
-{
-    background-color: rgb(188, 200, 255);
-}
-
-li {
-    padding: 5px;
-    background-color: inherit;
-    list-style-type: circle;
-    list-style-position: outside;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 #container>div>h3 {
     background-color: inherit;
@@ -70,15 +63,14 @@ li {
     text-decoration: underline;
 }
 
-.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+#container>div:hover {
+    background-color: rgb(188, 200, 255);
 }
 
-.centered-button {
-    display: flex;
-    justify-content: center;
+li {
+    padding: 5px;
+    background-color: inherit;
+    list-style-type: circle;
+    list-style-position: outside;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
