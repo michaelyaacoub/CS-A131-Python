@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Submission" content="7KLYS47IEV47VMN2263CKIMCZ"/>
+<meta name="Time" content="2023-03-16T19:29:49Z"/>
+<meta name="ID" content="pe4"/>
+<meta name="User" content="ewab-dofu-xota-ruha"/>
+<meta name="Problem" content="ext/2303160141bfv904ugqnzvlghg66o9qozlz"/>
+<meta name="Elapsed" content="2244 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+.note {color: blue; font-weight: bold;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header tester">Testers</p>
+<div class="tester">
+</div>
+<p class="header call">Calling with Arguments</p>
+<div class="call">
+<p class="caption">Error:</p>
+<pre class="output">  File "pe4.py", line 52
+    if string[i] == "a" or if string[i] == "A"
+                           ^
+SyntaxError: invalid syntax
+
+</pre>
+<p class="item">Running pe4_Tester.py</p>
+<p class="caption">Error:</p>
+<pre class="output">  File "pe4.py", line 52
+    if string[i] == "a" or if string[i] == "A"
+                           ^
+SyntaxError: invalid syntax
+
+</pre>
+</div>
+<p class="header studentFiles">Submitted files</p>
+<div class="studentFiles">
+<p class="caption">pe4.py:</p>
+<pre class="output">''' Programming Exam 4 Functions
+ amTsaasan, Spring 2023
+'''
+
+"""
+Name: Michael Yaacoub
+Date: 03/16/23
+Assiginment: Programming Exam 4
+--------------------------------
+Write a four (4) functions in alphabetical order,
+to be complete a function must include a descriptive
+docstring (PEP8 and David Kay's Design Recipe).
+The functions must be named:
+"""
+
+def count_types(upper_lower):
+    """Takes in a string and returns a string"""
+    upper_case_letter = 0
+    lower_case_letter = 0
+    for i in range(len(upper_lower)):
+        if upper_lower.isupper() is True:
+            lower_case_letter += 1
+        if lower_lower.lower() is False:
+            upper_case_letter += 1
+            
+print(f"There are {upper_case_letter} upper case letters, {lower_case_letter} lower case letters.")
+
+assert count_types("AAA") == 3
+assert count_types("aaaa") == 4
+
+
+def greeting():
+    """Displays the consle"""
+    print("Hello World!")
+
+
+
+def grid(integer):
+    """Takes in an int and displays the consle gird"""
+    print("-" * integer)
+    print("| " + " |")
+    print("-" * integer)
+    
+assert grid(4) == print("----" * integer)
+
+
+def password_change(string):
+    """ Take in a string param and return it formated per changes"""
+    word = 0
+    result = ""
+    for i in range(len(string)):
+       if string[i] == "a" or if string[i] == "A"
+   return result
+   
+assert password_change("aA") == "@"
+assert password_change("iI") == "!"
+</pre>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">0</p>
+</div>
+<div class="footnotes"><div class="footnote">2023-03-16T19:29:49Z</div>
+</div>
+</body></html>
