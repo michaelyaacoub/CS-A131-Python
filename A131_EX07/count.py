@@ -8,28 +8,32 @@ Write a program that asks the user for a file name
 and prints the number of characters, words, and lines in that file.
 """
 
+def get_file():
+    """ Ask user for file name and return the opened file object """
+    filename = input("Enter file name: ")
+    with open(filename, "r") as infile:
+        return infile.read()
 
-def get_file(file):
-    """ Ask user for file name """
-    file = input("Enter file name: ")
-    pass
 
-def count_lines():
+def count_lines(file):
     """ Counts the lines in a file. """
-    pass
+    my_line = len(file.split('\n'))
+    return my_line
 
-def count_words():
+def count_words(file):
     """ Counts the words in a file. """
-    pass
+    my_words = len(file.split())
+    return my_words
 
-def count_characters():
+def count_characters(file):
     """ Counts the characters in a file. """
-    pass
+    my_char = len(file)
+    return my_char
 
 if __name__ == '__main__':
-    get_file("runfile.txt")
-    count_lines()
-    count_words()
-    count_characters()
+    file  = get_file()
+    lines = count_lines(file)
+    words = count_words(file)
+    chars = count_characters(file)
 
-    print("Success!")
+    print(f"The file contains '{chars}' characters, '{words}' words and '{lines}' lines")
