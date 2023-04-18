@@ -13,14 +13,30 @@ the sum when the user is done entering data.
 Use exception handling to detect improper inputs.
 """
 
-def sum():
-    """ Asks user for input and checks for validation after two prompts. """
-    # ask user for input
-    # use a try catch to ask them to re-enter for couple times.
-    # after second chance exit and sum up the entered values.
-    # initialize sum with zero '0' and return it if not proper input.
-    # else return sum.
-    # loop through the input.
-    
+def read_float():
+    """ Checks for user input validation validation after two prompts then sums input. """
+    while True:
+        try:
+            return float(input("Enter a number, or another non-number to quit: "))
+        except ValueError:
+            return None
 
-    pass
+def get_sum():
+    """ Asks user for input and checks for input err. """
+    total = 0.0
+    num_tries = 0
+    while num_tries < 2:
+        value = read_float()
+        if value is None:
+            num_tries += 1
+            if num_tries >= 2:
+                break
+        else:
+            total += value
+            num_tries = 0
+    print("The total is", total)
+
+
+if __name__ == "__main__":
+    get_sum()
+
