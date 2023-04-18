@@ -21,4 +21,5 @@ def number_lines():
             print("/* " + str(count_lines) + "*/ " + line.strip())
             outfile.write("/*" + str(count_lines) + "*/" + line)
 
-number_lines()
+if __name__ == "__main__":    
+    number_lines()
