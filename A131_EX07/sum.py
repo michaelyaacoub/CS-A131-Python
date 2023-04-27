@@ -21,6 +21,7 @@ def read_float():
         except ValueError:
             return None
 
+
 def get_sum():
     """ Asks user for input and checks for input err. """
     total = 0.0
@@ -39,4 +40,5 @@ def get_sum():
 
 if __name__ == "__main__":
     get_sum()
+
 
